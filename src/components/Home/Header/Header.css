@@ -1,0 +1,19 @@
+.navbar{
+   background-color: #232741 !important;
+}
+.brand img{
+   width: 190px;
+   color: aliceblue !important;
+}
+.active_link{
+   color: #ffffff !important;
+}
+.link{
+   color: #ffffff80;
+   font-size: 18px;
+   font-weight: 500;
+}
+.link:hover{
+   text-decoration: none !important;
+   color: #ffffff80;
+}

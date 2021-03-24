@@ -1,0 +1,40 @@
+.about_wrapper{
+   height: 90.5vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.control_img{
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.left_side{
+   padding: 1em;
+}
+.right_side{
+   background: rgb(106, 216, 181);
+   padding: 1em;
+   border-radius: 7px;
+}
+.right_side h2{
+   color: #232741;
+}
+.info{
+   font-size: 18px;
+   font-weight: 500;
+}
+.skills{
+   display: flex;
+   flex-direction: column;
+}
+.skill_design{
+   float:left;
+   background:#232741;
+   color:white;
+   margin-right:5px;
+   border-radius: 6px;
+   padding:4px 10px;
+}
+
