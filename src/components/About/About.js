@@ -1,11 +1,12 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
+import Flash from 'react-reveal/Flash';
 import Jump from 'react-reveal/Jump';
 import avator from './avator.jpg'
 import './About.css';
 const mySkills = [
-   "Javascript", "React.js", "Botstrap", "React-bootstrap", "Material UI", "Firebase", "Node.js", "Express.js", "MongoDB Atlas", "Mongoose", "Redux.js", "Sass", "HTML5", "CSS3"
+   "Javascript", "React.js", "Bootstrap", "React-bootstrap", "Material UI", "Firebase", "Node.js", "Express.js", "MongoDB Atlas", "Mongoose", "Redux.js", "Sass", "HTML5", "CSS3"
 ];
 const expertise = ["Javascript", "React.js", "Node.js", "Express.js", "MongoDB Atlas", "Mongoose", "Firebase", "HTML5", "CSS3", "Bootstrap", "React-Bootstrap", "Material UI"];
 const About = () => {
@@ -25,8 +26,11 @@ const About = () => {
                   <Fade left>
                   <h5>MERN Stack Developer. Built according to the latest web standards.</h5>
                   </Fade>
+                  <Flash>
+                     <hr/>
+                  </Flash>
                   <Fade right>
-                  <p className="info">My name is Nihar Mondal. I spacialise in creating beautiful, usable, professional websites, using React.js.</p>
+                  <p className="info">My name is Nihar Mondal. I spacialise in creating beautiful, responsive, professional websites, using React.js.</p>
                   </Fade>
                </Grid>
                <Grid item md={6} xs={12}
@@ -63,7 +67,8 @@ const About = () => {
                            
                               return (
                                  <Fade right>
-                                     <p key={'skill' + index} className="skill_design">{skill}</p>
+                                    <p key={'skill' + index}
+                                       className="skill_design">{skill}</p>
                                  </Fade>
                                  
                               )
@@ -75,8 +80,6 @@ const About = () => {
                      </div>
                      
                   </div><br />
-                  
-                 
                </Grid>
             </Grid>
          </main>

@@ -1,0 +1,22 @@
+.single_project_wrapper{
+   height: 500px;
+   width: 350px;
+   color: #232741;
+   transition: .5s;
+}
+.single_project_wrapper:hover{
+   transform: rotate(1.5deg);
+   transition: .5s;
+}
+.project_img{
+   width: 330px;
+   height: 300px;
+}
+.project_link{
+   padding: 7px;
+   background-color: #232741;
+}
+
+.project_link a:hover{
+   text-decoration: none;
+}

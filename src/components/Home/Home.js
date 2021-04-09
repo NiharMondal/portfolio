@@ -11,7 +11,7 @@ import {SiLinkedin} from "react-icons/si"
 const Home = () => {
    const expertise=["I am ",2000, "I am a MERN Stack Developer",3000,  "My passion is coding",3000, "I am a Learner",3000, `I can provide pixel  perfect design`,3000]
    return (
-      <div className="all">
+   
       <main className="content_wrapper">
          <div className="section_wrapper">
             <div className="wrapper">
@@ -59,7 +59,6 @@ const Home = () => {
                </div>
             </div>
          </main>
-         </div>
    );
 };
 

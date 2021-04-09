@@ -13,6 +13,11 @@
 .left_side{
    padding: 1em;
 }
+.left_side h5{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   letter-spacing: 2px;
+
+}
 .right_side{
    background: rgb(106, 216, 181);
    padding: 1em;
@@ -22,9 +27,10 @@
    color: #232741;
 }
 .info{
-   font-size: 18px;
+   font-size: 17px;
    font-weight: 500;
 }
+
 .skills{
    display: flex;
    flex-direction: column;
