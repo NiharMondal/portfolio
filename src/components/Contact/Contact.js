@@ -5,7 +5,8 @@ import React from 'react';
 import emailjs from 'emailjs-com'
 import './Contact.css';
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
+import { Grid } from '@material-ui/core';
 const Contact = () => {
    const notify = () => {
       toast.success('🦄 Message has been sent successfully', {
@@ -27,95 +28,84 @@ const Contact = () => {
       e.target.reset();
    }
    return (
-      <div className=" contact_wrapper">
-         <div className="container">
-         <div className="contact_heading ">
-            <div>
+      <Grid container
+         className="contact_wrapper">
+         <Grid item md={3}></Grid>
+         <Grid item md={6} sm={12} xs={12} className="p-1">
+            <div className="contact_header">
                <Zoom left cascade>
-                  <h4>Feel </h4>
+                  <h3>Get </h3>
+               </Zoom>
+               <Zoom left cascade>
+                  <h3>in </h3>
+               </Zoom>
+               <Zoom left cascade>
+                  <h3>Touch </h3>
                </Zoom>
             </div>
-            <div>
-               <Zoom top cascade>
-                  <h4>free </h4>
-               </Zoom>
-            </div>
-            <div>
-               <Zoom top cascade>
-                  <h4>to </h4>
-               </Zoom>
-            </div>
-            <div>
-               <Zoom top cascade>
-                  <h4>contact </h4>
-               </Zoom>
-            </div>
-            <div>
-               <Zoom right cascade>
-                  <h4>with me</h4>
-               </Zoom>
-            </div>
-            </div>
-            <div className="form_wrapper shadow-lg rounded">
+            <form onSubmit={handleMessage}
+               className="p-3 shadow-lg">
+               <ToastContainer/>
+               <Fade top>
+                  <div className="form-group">
+                     <label htmlFor="name">
+                     Your Name</label>
+                     <input type="text"
+                        name="name"
+                        className="form-control"
+                        required
+                     />
+                  </div>
+               </Fade>
+               <Fade right>
+                  <div className="form-group">
+                     <label htmlFor="email">
+                     Email Address</label>
+                     <input type="email"
+                        name="email"
+                        className="form-control"
+                        required
+                     />
+                  </div>
+               </Fade>
+               <Fade left>
+                  <div className="form-group">
+                     <label htmlFor="subject">
+                     Subject</label>
+                     <input type="text"
+                        name="subject"
+                        className="form-control"
+                        required
+                     />
+                     
+                  </div>
+               </Fade>
+               <Fade right>
+                  <div className="form-group">
+                     <label htmlFor="message">
+                     Message</label>
+                     <textarea
+                        name="message"
+                        className="form-control" rows="3"
+                        placeholder="Write message...."
+                        required
+                     >
+                     </textarea>
+                  </div>
+               </Fade>
+               <Shake>
+                  <button type="submit"
+                     className="btn btn-info px-5">
+                     <Zoom top cascade>
+                        SEND
+                     </Zoom>
+                  </button>
+               </Shake>
+            </form>
+         </Grid>
+         <Grid item md={3}></Grid>
 
-               <form onSubmit={handleMessage}>
-               <ToastContainer />
-                  <Fade left>
-                  <div
-                     className="form-group">
-                     <label htmlFor="from_name">Your Name</label>
-                        <input
-                           name='from_name'
-                           className="form-control" type="text" required />
-                        
-                  </div>
-                  </Fade>
-                 
-               
-                  <Fade right>
-                  <div
-                     className="form-group">
-                     <label htmlFor="name">Email address</label>
-                        <input
-                           name="email"
-                           className="form-control" type="email" required />
-                        
-                  </div>
-                  </Fade>
-                  <Fade left>
-                  <div
-                     className="form-group">
-                     <label htmlFor="name">Subject</label>
-                        <input
-                           name="subject"
-                           className="form-control" type="text" required />
-                        
-                  </div>
-                  </Fade>
-                  
-                  <Fade right>
-                  <div
-                     className="form-group">
-                     <label htmlFor="name">Message</label>
-                        <textarea className="form-control"
-                           name="message"
-                           rows="3" placeholder="Write message...." required></textarea>
-                        
-
-                  </div>
-                  </Fade>
-
-                  <Shake >
-                     <button
-                        
-                        type="submit" className="btn btn-primary px-5"><Zoom top cascade>
-                           SEND</Zoom></button>
-                           
-                  </Shake>
-               </form>
-            </div>
-         </div>
-      </div>
+      </Grid>
    );
 };
 

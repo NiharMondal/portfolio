@@ -14,7 +14,7 @@ const Projects = () => {
             <section
                className="project container">
                <Grid container
-                  spacing={3}
+                  spacing={2}
                   justify="center">
                   {
                      projectData.map(project => <ProjectItem project={ project}/>)

@@ -7,7 +7,7 @@ const ProjectItem = ({ project }) => {
    return (
       <>
          <Grid item md={4} sm={6} xs={12}>
-            <div className="py-5 px-2 text-center ">
+            <div className="py-4 px-1 text-center ">
                <div
                   className="single_project_wrapper">
                   <Fade bottom>
