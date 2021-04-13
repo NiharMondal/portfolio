@@ -12,8 +12,24 @@
    color: #ffffff80;
    font-size: 18px;
    font-weight: 500;
+   padding: 7px 12px;
 }
 .link:hover{
    text-decoration: none !important;
    color: #ffffff80;
+}
+.resume_btn{
+   outline: none;
+   border: none;
+   font-size: 18px;
+   font-weight: 500;
+   padding: 2px 12px;
+   background-color: #5862a5 !important;
+}
+.resume_btn a{
+   color: #fff;
+}
+.resume_btn a:hover{
+   text-decoration: none;
+   color: #fff;
 }

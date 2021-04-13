@@ -3,6 +3,8 @@ import { Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import logo from './signature.png';
+import resume from './my-resume.pdf'
+
 const Header = () => {
    return (
       <Navbar expand="lg"
@@ -16,31 +18,39 @@ const Header = () => {
                <Nav.Link href="/">
                   <NavLink
                      exact
-                     className="link px-4"
+                     className="link"
                      activeClassName="active_link" to="/">
                      Home
                   </NavLink>
                </Nav.Link>
                <Nav.Link href="/about">
                   <NavLink
-                     className="link px-4"
+                     className="link "
                      activeClassName="active_link" to="/about">
                      About
                   </NavLink>
                </Nav.Link>
                <Nav.Link href="/project">
                   <NavLink 
-                     className="link px-4"
+                     className="link "
                      activeClassName="active_link" to="/project">
                      Project
                   </NavLink>
                </Nav.Link>
                <Nav.Link href="/contact">
                   <NavLink
-                     className="link px-4"
+                     className="link "
                      activeClassName="active_link" to="/contact">
                      Contact
                   </NavLink>
+               </Nav.Link>
+               <Nav.Link
+                  href="/resume">
+                  <button
+                     className="resume_btn rounded">
+                     <a  href={resume}
+                        download="my-resume.pdf">Resume</a>
+                  </button>
                </Nav.Link>
             </Nav>
          </Navbar.Collapse>

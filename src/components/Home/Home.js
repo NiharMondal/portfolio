@@ -8,6 +8,7 @@ import './Home.css';
 import {FaFacebook} from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai'
 import {SiLinkedin} from "react-icons/si"
+
 const Home = () => {
    const expertise=["I am ",2000, "I am a MERN Stack Developer",3000,  "My passion is coding",3000, "I am a Learner",3000, `I can provide pixel  perfect design`,3000]
    return (
@@ -44,13 +45,13 @@ const Home = () => {
             
                <div className="wrapper contact">
                   
-                  <Fade bottom>
+                  <Fade top >
 
                      <a target="blank" href="https://www.facebook.com/nihar.mondol.58/"><FaFacebook/></a>
 
                   </Fade>
    
-                  <Fade top>
+                  <Fade bottom>
                      <a target="blank" href="https://github.com/NiharMondal"> <AiFillGithub/> </a>
                   </Fade>
                   <Fade right>

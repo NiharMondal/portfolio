@@ -1,0 +1,17 @@
+.contact_wrapper{
+   background-color: #232741;
+   color: #f0f8ff;
+   height: 90.5vh;
+   padding: 7px;
+}
+.contact_heading{
+   display: flex;
+   justify-content: center;
+   padding: 1em;
+}
+.form_wrapper{
+   padding: 1rem;
+   height: 500px;
+   width: 650px;
+   margin: auto;
+}
